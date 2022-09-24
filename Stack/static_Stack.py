@@ -40,7 +40,7 @@ class Stack:
 
 
 if __name__ == '__main__':
-    st = Stack(100)
+    st = Stack(100)          #stack of size = 100
     st.push(43)
     print(st.peek())
 
