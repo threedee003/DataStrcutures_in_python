@@ -6,9 +6,18 @@ if(path.exists('input.txt')):
  sys.stdout = open("output.txt","w")
 
 
+def get_ints():
+    return list(map(int, sys.stdin.readline().strip().split()))
 
+def get_string():
+    return sys.stdin.readline().strip()
+
+ #----------------------------------------------------------------------------------------------------------------
+ 
+ 
 n = int(input())
-arr = [int(x) for x in input().split()]
+arr = get_ints()
+
 
 def main():
     sum = 0
